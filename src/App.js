@@ -1,6 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { config_to_query } from "json-graphql-parser/v2/index.js";
+import {
+  config_to_query,
+  validate_object,
+} from "json-graphql-parser/v2/index.js";
 import { useEffect, useState } from "react";
 import { getJsonStrings } from "./queries";
 
@@ -16,6 +19,9 @@ function App() {
     setObjectData(
       JSON.stringify(allTemplates[v.target.selectedIndex].value, null, 4)
     );
+  };
+  const validate = () => {
+    alert(JSON.stringify(validate_object(JSON.parse(objectData))));
   };
   const convert = () => {
     try {
@@ -68,6 +74,13 @@ function App() {
           </div>
         </div>
         <div className="app-footer">
+          <button className="btn" onClick={() => validate()}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Validate
+          </button>
           <button className="btn" onClick={() => convert()}>
             <span></span>
             <span></span>
