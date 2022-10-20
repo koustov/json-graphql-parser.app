@@ -99,6 +99,7 @@ flex:1
 /* Logo */
 
 .header-fixed .header-limiter h1 {
+  cursor: pointer;
 	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
 	line-height: 40px;
 	margin: 0;

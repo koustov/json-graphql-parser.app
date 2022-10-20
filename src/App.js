@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import {
   config_to_query,
@@ -35,12 +34,10 @@ function App() {
   return (
     <div className="app-wrapper">
       <div className="app-header">
-        <header class="header-fixed">
-          <div class="header-limiter">
+        <header className="header-fixed">
+          <div className="header-limiter">
             <h1>
-              <a href="#">
-                <span>JSON graphql parser</span>&nbsp;playground
-              </a>
+              <span>JSON GraphQL parser</span>&nbsp;playground
             </h1>
           </div>
         </header>
@@ -50,7 +47,7 @@ function App() {
           <div className="section-title">
             Select any predefined object or write your own
           </div>
-          <div class="select">
+          <div className="select">
             <select id="dropdown" onChange={(e) => onSelectionChanged(e)}>
               {allTemplates.map((d) => {
                 return <option value={d.value}>{d.name}</option>;
