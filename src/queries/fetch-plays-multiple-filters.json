@@ -1,0 +1,53 @@
+[
+  {
+    "display": "Filter plays by multiple filters",
+    "name": "Fetch_Plays",
+    "function": "plays",
+    "write": false,
+    "return": [
+      "component",
+      "cover",
+      "description",
+      "featured",
+      "dev_mode",
+      "github",
+      "language",
+      { "play_like": ["liked", "play_id", "user_id"] },
+      "name",
+      "slug",
+      { "user": ["id", "displayName", "avatarUrl"] },
+      "created_at"
+    ],
+    "orderBy": { "created_at": "desc" },
+    "where": {
+      "clause": {
+        "operator": "and",
+        "conditions": [
+          {
+            "field": "level_id",
+            "operator": "eq",
+            "value": "replace with level_id"
+          },
+          {
+            "clause": {
+              "operator": "or",
+              "conditions": [
+                {
+                  "field": "tag_id",
+                  "operator": "eq",
+                  "value": "replace with tag_id"
+                },
+                {
+                  "field": "tag_id",
+                  "operator": "eq",
+                  "value": "replace with tag_id"
+                }
+              ],
+              "class": "play_tags"
+            }
+          }
+        ]
+      }
+    }
+  }
+]

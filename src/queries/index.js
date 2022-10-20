@@ -7,16 +7,27 @@ import d6 from "./fetch-plays.json";
 import d7 from "./insert.json";
 import d8 from "./update.json";
 import d9 from "./fetch-plays-featured.json";
+import d10 from "./fetch-plays-multiple-filters.json";
+
 export const getJsonStrings = () => {
   const res = [];
-  [...d1, ...d2, ...d3, ...d4, ...d5, ...d6, ...d7, ...d8, ...d9].forEach(
-    (d) => {
-      res.push({
-        name: d.display,
-        value: d,
-      });
-    }
-  );
+  [
+    ...d1,
+    ...d2,
+    ...d3,
+    ...d4,
+    ...d5,
+    ...d6,
+    ...d7,
+    ...d8,
+    ...d9,
+    ...d10,
+  ].forEach((d) => {
+    res.push({
+      name: d.display,
+      value: d,
+    });
+  });
   return res;
   //   const promises = [];
   //   promises.push(

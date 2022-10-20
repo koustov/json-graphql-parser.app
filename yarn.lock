@@ -5690,10 +5690,10 @@ jsesc@~0.5.0:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
   integrity sha512-uZz5UnB7u4T9LvwmFqXii7pZSouaRPorGs5who1Ip7VO0wxanFvBL7GkM6dTHlgX+jhBApRetaWpnDabOeTcnA==
 
-json-graphql-parser@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/json-graphql-parser/-/json-graphql-parser-0.1.4.tgz#928af9a8a6a9696276b06dca0882f245337ea4f3"
-  integrity sha512-nngaCJ65fOd+GmFKhPeZuTH6yxpuQldMkQGZbmDB+nFCbg8Fw1EjFn0Ga6VugP3tWUlB8RyqWpsbLF9ZFXI9RA==
+json-graphql-parser@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/json-graphql-parser/-/json-graphql-parser-0.1.8.tgz#6e019f49d7840976e3d6c619a2ba7b81fbe139c0"
+  integrity sha512-6bfRRnRSKjdQPYcWh6PBXatFAZk2PTucFzimSYLGih90iMue7rz7KI6tg2M1VFnUy68cEeyo6yDQCTp0eZIc+Q==
   dependencies:
     axios "^0.27.2"
     jsonschema "^1.4.1"
